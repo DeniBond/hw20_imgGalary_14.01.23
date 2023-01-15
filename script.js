@@ -23,7 +23,7 @@
     imgList.addEventListener('click', e=>{
         if (e.target.getAttribute('src')){
             imgContent.setAttribute('src', e.target.getAttribute('src'))
-            imgContent.style.width = "80vw"
+            imgContent.style.width = "40vw"
         }
     })
 
@@ -41,21 +41,6 @@
             modalZoneDiv.classList.add('hide');
             modalAlertDiv.classList.add('hide');
         });
-        modalAlertDiv.addEventListener('click', (event) => {
-            if (event.target.id === 'close') {
-                modalZoneDiv.classList.add('hide');
-                modalAlertDiv.classList.add('hide');
-            } else if (event.target.id === 'save') {
-                const inVal = document.getElementById('name').value;
-                console.log(inVal);
-            }
-        });
-
-        //TODO add to #imgList images 80*80px
-        //TODO add to #imgList 'click' event listener
-        //     Делаем 1 листнер на клик для всего списка
-        //     Как проверитть что кликнули на картинку условие гетатрибут src
-        //     Кликая элемент в списке мы должны увидеть увеличиную картинку
     }
     render()
 })()

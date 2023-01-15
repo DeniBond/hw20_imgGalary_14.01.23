@@ -28,21 +28,12 @@ h1{
 .alert_content{
     position: fixed;
     top: 100px;
-    bottom: 10vw;
-    left: 10vw;
-    right: 10vw;
-    margin: 0 auto;
+    left: 30vw;
+    /*Немного подправил отображение развернутой картинки*/
     background-color: whitesmoke;
     border-radius: 8px;
     border: 1px solid darkgray;
 
-}
-#close{
-    padding: 8px;
-    border: 1px solid darkslateblue;
-    border-radius: 2px;
-    width: 30px;
-    cursor: pointer;
 }
 .hide{
     display: none;
